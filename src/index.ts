@@ -1,4 +1,4 @@
 import {test} from './test';
 
 
-test();
+test(222);

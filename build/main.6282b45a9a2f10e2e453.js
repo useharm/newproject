@@ -10,23 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
+/***/ "./src/index.ts":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/index.ts ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/test.js\");\n\r\n\r\n\r\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.test)();\n\n//# sourceURL=webpack://new-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/test.ts\");\n\r\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.test)(222);\r\n\n\n//# sourceURL=webpack://new-project/./src/index.ts?");
 
 /***/ }),
 
-/***/ "./src/test.js":
+/***/ "./src/test.ts":
 /*!*********************!*\
-  !*** ./src/test.js ***!
+  !*** ./src/test.ts ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"test\": () => (/* binding */ test)\n/* harmony export */ });\nfunction test() {\r\n    console.log('функция работает')\r\n}\n\n//# sourceURL=webpack://new-project/./src/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"test\": () => (/* binding */ test)\n/* harmony export */ });\nfunction test(arg) {\r\n    console.log(\"\\u0424\\u0443\\u043D\\u043A\\u0446\\u0438\\u044F \\u0440\\u0430\\u0431\\u043E\\u0442\\u0430\\u0435\\u0442 + \".concat(arg));\r\n    return \"\\u041F\\u0435\\u0440\\u0435\\u0434\\u0430\\u043B\\u0438 \\u0447\\u0438\\u0441\\u043B\\u043E \".concat(arg);\r\n}\r\n\n\n//# sourceURL=webpack://new-project/./src/test.ts?");
 
 /***/ })
 
@@ -90,7 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.ts");
 /******/ 	
 /******/ })()
 ;

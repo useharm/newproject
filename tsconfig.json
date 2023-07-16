@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true, // строгая типизация
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true, // позволяет обрабатывать не только js но и ts
+    "moduleResolution": "node",
+    "esModuleInterop": true, // вместо common js (require module.exports) можно использовать import export
+    // флаг ниже позволяет вместо import * as React from 'react' можно писать просто import React from 'react'
+    "allowSyntheticDefaultImports": true,
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
