@@ -4,6 +4,7 @@
     "noImplicitAny": true, // строгая типизация
     "module": "es6",
     "target": "es5",
+    "baseUrl": ".", // для абсолютного импорта
     "jsx": "react",
     "allowJs": true, // позволяет обрабатывать не только js но и ts
     "moduleResolution": "node",
