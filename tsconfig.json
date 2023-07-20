@@ -5,7 +5,7 @@
     "module": "es6",
     "target": "es5",
     "baseUrl": ".", // для абсолютного импорта
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true, // позволяет обрабатывать не только js но и ts
     "moduleResolution": "node",
     "esModuleInterop": true, // вместо common js (require module.exports) можно использовать import export

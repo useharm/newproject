@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("Функция работает + ".concat(222)),"Передали число ".concat(222),document.body.innerHTML="<h1>HELLO</h1>"})();
