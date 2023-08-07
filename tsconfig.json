@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true, // строгая типизация
-    "module": "es6",
+    "module": "es2022",
     "target": "es5",
     "baseUrl": ".", // для абсолютного импорта
     "jsx": "react-jsx",
