@@ -5,6 +5,9 @@
     "module": "es2022",
     "target": "es5",
     "baseUrl": ".", // для абсолютного импорта
+    "paths": {
+      "*": ["./src/*"]
+    },
     "jsx": "react-jsx",
     "allowJs": true, // позволяет обрабатывать не только js но и ts
     "moduleResolution": "node",
