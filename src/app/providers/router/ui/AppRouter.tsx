@@ -8,7 +8,10 @@ function AppRouter() {
   return (
         <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-                {Object.entries(routeConfig).map(([key, value]) => (<Route key={value.path} path={value.path} element={value.element} />))}
+                {Object.entries(routeConfig).map(([key, value]) => (<Route 
+                key={value.path} 
+                path={value.path} 
+                element={(<div className='page-wrapper'>{value.element}</div>)} />))}
             </Routes>
         </Suspense>
   )
