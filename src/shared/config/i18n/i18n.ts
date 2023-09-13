@@ -8,6 +8,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 i18n
   .use(Backend)
   .use(LanguageDetector)
+  // Вспомогательные либы весят в сборке ~40 кб, сохраняют выбранный язык в локалсторедже
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
