@@ -7,6 +7,7 @@ module.exports = {
 		'xo',
 		'plugin:react/recommended',
 		'plugin:react/jsx-runtime',
+		'plugin:i18next/recommended',
 	],
 	overrides: [
 		{
@@ -36,6 +37,8 @@ module.exports = {
 	},
 	plugins: [
 		'react',
+		'@typescript-eslint',
+		'i18next',
 	],
 	rules: {
 		strictNullChecks: 0,
@@ -45,5 +48,6 @@ module.exports = {
 		'react/no-children-prop': 0,
 		'@typescript-eslint/no-unsafe-argument': 0,
 		'@typescript-eslint/no-floating-promises': 0,
+		'no-promise-executor-return': 0,
 	},
 };
