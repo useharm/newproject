@@ -1,3 +1,9 @@
 {
-    "Language": "Русский"
+    "Language": "Русский",
+    "PageError": "Что-то пошло не так",
+    "linkAbout": "о нас",
+    "linkMain": "главная страница",
+    "reloadPage": "перезагрузить страницу",
+    "throwError": "выдать ошибку",
+    "toggleSideBar": "переключить"
 }

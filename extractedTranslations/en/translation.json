@@ -1,6 +1,13 @@
 {
+  "": "",
   "About page": "About page",
   "Language": "Language",
   "Main page": "Main page",
-  "Not Found": "Not Found"
+  "Not Found": "Not Found",
+  "PageError": "PageError",
+  "linkAbout": "linkAbout",
+  "linkMain": "linkMain",
+  "reloadPage": "reloadPage",
+  "throwError": "throwError",
+  "toggleSideBar": "toggleSideBar"
 }

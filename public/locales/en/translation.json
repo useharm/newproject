@@ -1,3 +1,9 @@
 {
-    "Language": "English"
+    "Language": "English",
+    "PageError": "Something went wrong",
+    "linkAbout": "about page",
+    "linkMain": "main page",
+    "reloadPage": "reload page",
+    "throwError": "throw error",
+    "toggleSideBar": "toggle"
 }
