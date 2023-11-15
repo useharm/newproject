@@ -50,6 +50,5 @@ module.exports = {
 		'@typescript-eslint/no-unsafe-argument': 0,
 		'@typescript-eslint/no-floating-promises': 0,
 		'no-promise-executor-return': 0,
-		/* '@typescript-eslint/no-unsafe-call': 0, */
 	},
 };
