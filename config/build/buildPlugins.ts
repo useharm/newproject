@@ -16,7 +16,6 @@ export function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPlugi
 			chunkFilename: 'css/[name].[contenthash:8].css',
 		}),
 		new webpack.DefinePlugin({
-			// eslint-disable-next-line @typescript-eslint/naming-convention
 			__IS_DEV__: JSON.stringify(isDev),
 		}),
 		new BundleAnalyzerPlugin({

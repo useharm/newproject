@@ -18,6 +18,11 @@
     "allowSyntheticDefaultImports": true,
     "strictNullChecks": true,
   },
+  "include": [
+    "config",
+    "src", // путь к вашим исходным файлам
+    ".eslintrc.js" // путь к проблемному файлу
+  ],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"

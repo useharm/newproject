@@ -1,6 +1,6 @@
 import type webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import {type BuildOptions} from './types/config';
+import { type BuildOptions } from './types/config';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 	const babelLoader = {
@@ -58,8 +58,16 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 			// Compiles Sass to CSS
 			'sass-loader',
 		],
-
 	};
 
-	return [cssLoader, svgLoader, fileLoader, babelLoader, typescriptLoader];
+	const eslintLoader = {
+		test: /\.js$/,
+		exclude: /node_modules/,
+		loader: 'eslint-loader',
+		options: {
+			// eslint options (if necessary)
+		},
+	};
+
+	return [cssLoader, svgLoader, fileLoader, babelLoader, typescriptLoader, /* eslintLoader */];
 }

@@ -1,4 +1,5 @@
 module.exports = {
+	parser: '@typescript-eslint/parser',
 	env: {
 		browser: true,
 		es2021: true,
@@ -18,9 +19,6 @@ module.exports = {
 			files: [
 				'.eslintrc.{js,cjs}',
 			],
-			parserOptions: {
-				sourceType: 'script',
-			},
 		},
 		{
 			extends: [
@@ -35,6 +33,10 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
+		allowImportExportEverywhere: false,
+		codeFrame: true,
+		project: './tsconfig.json',
+		tsconfigRootDir: __dirname,
 	},
 	plugins: [
 		'react',
@@ -44,7 +46,7 @@ module.exports = {
 	rules: {
 		strictNullChecks: 0,
 		'react/react-in-jsx-scope': 0,
-		'@typescript-eslint/naming-convention': 0,
+		'@typescript-eslint/naming-convention': null,
 		'react/no-deprecated': 0,
 		'react/no-children-prop': 0,
 		'@typescript-eslint/no-unsafe-argument': 0,
