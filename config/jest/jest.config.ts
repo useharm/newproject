@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
+import type { Config } from 'jest';
 
 const config: Config = {
 	testEnvironment: 'jsdom',
@@ -25,9 +25,13 @@ const config: Config = {
 		'node',
 	],
 	rootDir: '../../',
+	setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 	testMatch: [
 		'<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
 	],
+	"moduleNameMapper": {
+		"\\.(css|less|scss|sss|styl)$": "<rootDir>node_modules/jest-css-modules"
+	}
 	// All imported modules in your tests should be mocked automatically
 	// automock: false,
 
